@@ -23,7 +23,7 @@ from gallery import views as gallery_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', marketing_views.home, name="home"),
-    url(r'^history/', marketing_views.history, name="history"),
-    url(r'^contact/', marketing_views.contact, name="contact"),
-    url(r'^gallery/', gallery_views.gallery, name="gallery"),
+    url(r'^history$', marketing_views.history, name="history"),
+    url(r'^contact$', marketing_views.contact, name="contact"),
+    url(r'^gallery$', gallery_views.gallery, name="gallery"),
 ]
