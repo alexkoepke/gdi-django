@@ -1,0 +1,22 @@
+{
+  "name": "amazingproject",
+  "version": "1.0.0",
+  "description": "GDI Amazing Project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkoepke/gdi-django.git"
+  },
+  "author": "Alex Koepke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexkoepke/gdi-django/issues"
+  },
+  "homepage": "https://github.com/alexkoepke/gdi-django#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  }
+}
