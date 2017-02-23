@@ -3,11 +3,25 @@
 {% block content %}
 <main class="container">
     <h1>Gallery</h1>
+    <div class="row">
 
-    <ul>
-        {% for gallery in gallery_list %}
-        <li>{{ gallery }}</li>
+        {% for item in items %}
+        <div class="col s12 m4 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{ item.image }}">
+              <span class="card-title">{{ item }}</span>
+            </div>
+            <div class="card-content">
+              <p>{{ item.description }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ item.image }}" target="_blank" rel="noopener noreferrer">Link to image</a>
+            </div>
+          </div>
+        </div>
         {% endfor %}
-    </ul>
+
+    </div>
 </main>
 {% endblock %}
